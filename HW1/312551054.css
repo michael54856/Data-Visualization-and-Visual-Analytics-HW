@@ -1,0 +1,35 @@
+.x-axis
+{
+    font-size: 20px;
+}
+.y-axis
+{
+    font-size: 20px;
+}
+#x-axisType
+{
+    width:50%; 
+    display: flex; 
+    align-items: center; 
+    flex-direction: column;
+    border-right: 1px solid rgb(164, 164, 164); 
+}
+#y-axisType
+{
+    width:50%; 
+    display: flex; 
+    align-items: center; 
+    flex-direction: column; 
+    border-left: 1px solid rgb(164, 164, 164);
+}
+.round_button
+{
+    font-size: 24px;
+}
+.ball 
+{
+    width: 20px; 
+    height: 20px; 
+    border-radius: 50%; 
+    margin-right: 10px;
+}

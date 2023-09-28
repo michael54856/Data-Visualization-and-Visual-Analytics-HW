@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'> 
+        <link rel="stylesheet" href="312551054.css">
+        <script src="https://d3js.org/d3.v6.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div style="display: flex; width: 80%;  margin-left: 10%;">
+            <div style="width: 50%; text-align: center; font-size: 24px;">X-Axis</div>
+            <div style="width: 50%; text-align: center; font-size: 24px;;">Y-Axis</div>
+        </div>
+        <div style="display: flex; width: 80%;  margin-left: 10%; margin-top: 10px;">
+            <div id="x-axisType" onclick="updatePlot()">
+                <label><input type="radio" name="xLabel" value="sepal length" checked="checked"><span class="round_button">sepal length</span></label>
+                <label><input type="radio" name="xLabel" value="sepal width"><span class="round_button">sepal width</span></label>
+                <label><input type="radio" name="xLabel" value="petal length"><span class="round_button">petal length</span></label>
+                <label><input type="radio" name="xLabel" value="petal width"><span class="round_button">petal width</span></label>
+            </div>
+            <div id="y-axisType" onclick="updatePlot()">
+                <label><input type="radio" name="yLabel" value="sepal length" checked="checked"><span class="round_button">sepal length</span></label>
+                <label><input type="radio" name="yLabel" value="sepal width"><span class="round_button">sepal width</span></label>
+                <label><input type="radio" name="yLabel" value="petal length"><span class="round_button">petal length</span></label>
+                <label><input type="radio" name="yLabel" value="petal width"><span class="round_button">petal width</span></label>
+            </div>
+        </div>
+        <div style="width: 80%; height: 3px; margin-top: 25px; margin-left: 10%; background-color: rgb(164, 164, 164);"></div>
+        <div style="display: flex; width: 50%;  margin-left: 25%; margin-top: 20px;">
+            <div style="display: flex; width: 33.3%; justify-content: center; text-align: center; align-items: center; font-size: 24px; "><div class="ball" style="background-color: #ffb152;"></div>Iris-virginica</div>
+            <div style="display: flex; width: 33.3%; justify-content: center; text-align: center; align-items: center; font-size: 24px; "><div class="ball" style="background-color: #52ff6c;"></div>Iris-setosa</div>
+            <div style="display: flex; width: 33.3%; justify-content: center; text-align: center; align-items: center; font-size: 24px; "><div class="ball" style="background-color: #6c52ff;"></div>Iris-versicolor</div>
+        </div>
+        <div id="scatter-plot" style="display: flex;  margin-top: 5px; justify-content: center; width: 80%; margin-left: 10%;"></div>
+        <script src="312551054.js"></script>
+    </body>
+</html>
