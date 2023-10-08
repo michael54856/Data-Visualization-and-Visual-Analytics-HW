@@ -1,0 +1,43 @@
+.title
+{
+  text-align: center;
+}
+
+#plot
+{
+  margin: auto;
+  border: 1px solid #ccc;
+  display: flex;  
+  justify-content: center; 
+  width: 660px; 
+  height: 660px; 
+  background-color: rgba(253, 181, 181, 0.1);
+}
+
+#bar
+{
+  margin: auto;
+  margin-top: 30px;
+  display: flex;  
+  justify-content: center; 
+  width: 660px; 
+  height: 60px; 
+}
+
+#labelInfo
+{
+  margin-top: 30px;
+  margin-left: 20%; 
+  display: flex;  
+  justify-content: space-around; 
+  width: 60%; 
+  height: 50px; 
+}
+
+.container
+{
+  display: flex; 
+  align-items: center;
+  font-size: 24px;
+}
+

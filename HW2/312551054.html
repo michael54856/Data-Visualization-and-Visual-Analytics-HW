@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'> 
+        <link rel="stylesheet" href="312551054.css">
+        <script src="https://d3js.org/d3.v6.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <h1 class="title">HW2 - Parallel Coordinate Plots</h1>
+        <div id="labelInfo">
+          <label class="container" style="color: #52ff6c;">
+            <input type="checkbox" name="Iris-setosa" class="tagCheckBox" style="margin-right: 10px; width: 25px; height: 25px; accent-color: #52ff6c;" checked>
+            Iris-setosa
+          </label>
+          <label class="container" style="color: #6c52ff;">
+            <input type="checkbox" name="Iris-versicolor" class="tagCheckBox" style="margin-right: 10px; width: 25px; height: 25px; accent-color: #6c52ff;" checked>
+            Iris-versicolor
+          </label>
+          <label class="container" style="color: #ffb152;">
+            <input type="checkbox" name="Iris-virginica" class="tagCheckBox" style="margin-right: 10px; width: 25px; height: 25px; accent-color: #ffb152;" checked>
+            Iris-virginica
+          </label>
+        </div>
+        <div style="display: flex;">
+          <div class="chooseSection">
+            <div style="font-size: 24px;">Order:</div>
+            <ul class="sortable-list">
+              <li class="item" draggable="true" id="sepal length" name="chosenLabel">
+                <div class="details">
+                  <span>sepal length</span>
+                </div>
+              </li>
+              <li class="item" draggable="true" id="sepal width" name="chosenLabel">
+                <div class="details">
+                  <span>sepal width</span>
+                </div>
+              </li>
+              <li class="item" draggable="true" id="petal length" name="chosenLabel">
+                <div class="details">
+                  <span>petal length</span>
+                </div>
+              </li>
+              <li class="item" draggable="true" id="petal width" name="chosenLabel">
+                <div class="details">
+                  <span>petal width</span>
+                </div>
+              </li>
+            </ul>
+            <div style="font-size: 24px;">Enable:</div>
+            <ul class="enableList">
+              <li class="item">
+                <div class="details">
+                  <span>sepal length</span>
+                  <label class="switch">
+                    <input class="myCheckbox" name="sepal length" type="checkbox" checked>
+                    <span class="slider round"></span>
+                  </label>
+                </div>
+              </li>
+              <li class="item">
+                <div class="details">
+                  <span>sepal width</span>
+                  <label class="switch">
+                    <input class="myCheckbox" name="sepal width" type="checkbox" checked>
+                    <span class="slider round"></span>
+                  </label>
+                </div>
+              </li>
+              <li class="item">
+                <div class="details">
+                  <span>petal length</span>
+                  <label class="switch">
+                    <input class="myCheckbox" name="petal length" type="checkbox" checked>
+                    <span class="slider round"></span>
+                  </label>
+                </div>
+              </li>
+              <li class="item">
+                <div class="details">
+                  <span>petal width</span>
+                  <label class="switch">
+                    <input class="myCheckbox" name="petal width" type="checkbox" checked>
+                    <span class="slider round"></span>
+                  </label>
+                </div>
+              </li>
+
+            </ul>
+          </div>
+          <div id="plot">
+
+          </div>
+        </div>
+        <script src="312551054.js"></script>
+    </body>
+</html>
