@@ -143,7 +143,7 @@ window.addEventListener("resize", function() {
 });
 
 // 讀取CSV文件
-d3.csv("http://vis.lab.djosix.com:2023/data/iris.csv").then(function(csvData) {
+d3.csv("iris.csv").then(function(csvData) {
 
     // 過濾多餘的列
     csvData = csvData.filter(function(d) {
