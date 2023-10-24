@@ -1,0 +1,212 @@
+.title
+{
+  text-align: center;
+}
+
+
+#plot
+{
+  margin: auto;
+  margin-top: 30px;
+  border: 1px solid #ccc;
+  display: flex;  
+  justify-content: center; 
+  width: 1200px; 
+  height: 20000px; 
+  background-color: rgba(253, 181, 181, 0.1);
+}
+
+
+.chooseSection
+{
+  width: 1200px;
+  height: 280px;
+  justify-content: space-around; 
+  display: flex;
+  margin: auto;
+}
+.sortable-list {
+  width: 250px;
+  height: 250px;
+  background: #ffafaf;
+  border-radius: 7px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+.sortable-list .item {
+  list-style: none;
+  display: flex;
+  cursor: move;
+  background: #fff;
+  align-items: center;
+  width: 200px;
+  border-radius: 5px;
+  padding: 7px 5px;
+  margin-top: 11px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.25); 
+  border: 1px solid #ccc;
+  justify-content: space-between;
+  
+}
+.sortable-list .item .details {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.sortable-list .item .details span {
+  width: 100%;
+  text-align: center;
+  font-size: 1.13rem;
+}
+.sortable-list .item.dragging {
+  opacity: 0.6;
+}
+.sortable-list .item.dragging :where(.details, i) {
+  opacity: 0;
+}
+
+
+.enableList {
+  width: 250px;
+  height: 250px;
+  background: #ffafaf;
+  border-radius: 7px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+.enableList .item 
+{
+  width: 210px;
+  height: 35.8px;
+  list-style: none;
+  display: flex;
+  background: #fff;
+  align-items: center;
+  border-radius: 5px;
+  margin-top: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.25); 
+  border: 1px solid #ccc;
+  justify-content: space-between;
+  align-items: center;
+}
+.enableList .item .details 
+{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.enableList .item .details .spanText 
+{
+  display: flex;
+  width: 120px;
+  height: 30px;
+  font-size: 15px;
+  align-items: center; 
+}
+
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+}
+
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 3px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.chooseSortAttribute{
+  width: 290px;
+  height: 250px;
+  background: #ffafaf;
+  border-radius: 7px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  margin-top: 16px;
+}
+
+.selectMenu
+{
+  width: 210px;
+  height: 30px;
+  margin-left: 40px;
+  margin-top: 50px;
+}
+
+.container
+{
+  display: flex; 
+  font-size: 24px;
+  margin-left: 75px;
+  margin-top: 20px;
+}
+
+.blockTitle
+{
+  margin: auto;
+  display: flex;
+  width: 1200px;
+  justify-content: space-around; 
+}
+.titleText 
+{
+  width: 290px;
+  text-align: center;
+  font-size: 24px;
+}
+
+.ball 
+{
+    width: 20px; 
+    height: 20px; 
+    border-radius: 50%; 
+    margin-right: 10px;
+}

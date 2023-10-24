@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'> 
+        <link rel="stylesheet" href="312551054.css">
+        <script src="https://d3js.org/d3.v6.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <h1 class="title">HW5 - Stacked Bar Charts</h1>
+        <div class="blockTitle">
+          <div class="titleText">Order</div>
+          <div class="titleText">Enable</div>
+          <div class="titleText">Sort by</div>
+        </div>
+        <div class="chooseSection">
+            <ul class="sortable-list">
+              <li class="item" draggable="true" id="scores_teaching" name="chosenLabel">
+                <div class="details">
+                  <span>teaching</span>
+                </div>
+              </li>
+              <li class="item" draggable="true" id="scores_research" name="chosenLabel">
+                <div class="details">
+                  <span>research</span>
+                </div>
+              </li>
+              <li class="item" draggable="true" id="scores_citations" name="chosenLabel">
+                <div class="details">
+                  <span>citations</span>
+                </div>
+              </li>
+              <li class="item" draggable="true" id="scores_industry_income" name="chosenLabel">
+                <div class="details">
+                  <span>industry income</span>
+                </div>
+              </li>
+              <li class="item" draggable="true" id="scores_international_outlook" name="chosenLabel">
+                <div class="details">
+                  <span>international outlook</span>
+                </div>
+              </li>
+            </ul>
+            <ul class="enableList">
+              <li class="item">
+                <div class="details">
+                  <span class="spanText">teaching</span>
+                  <label class="switch">
+                    <input class="myCheckbox" name="scores_teaching" type="checkbox" checked>
+                    <span class="slider round"></span>
+                  </label>
+                </div>
+              </li>
+              <li class="item">
+                <div class="details">
+                  <span class="spanText">research</span>
+                  <label class="switch">
+                    <input class="myCheckbox" name="scores_research" type="checkbox" checked>
+                    <span class="slider round"></span>
+                  </label>
+                </div>
+              </li>
+              <li class="item">
+                <div class="details">
+                  <span class="spanText">citations</span>
+                  <label class="switch">
+                    <input class="myCheckbox" name="scores_citations" type="checkbox" checked>
+                    <span class="slider round"></span>
+                  </label>
+                </div>
+              </li>
+              <li class="item">
+                <div class="details">
+                  <span class="spanText">industry income</span>
+                  <label class="switch">
+                    <input class="myCheckbox" name="scores_industry_income" type="checkbox" checked>
+                    <span class="slider round"></span>
+                  </label>
+                </div>
+              </li>
+              <li class="item">
+                <div class="details">
+                  <span class="spanText">international outlook</span>
+                  <label class="switch">
+                    <input class="myCheckbox" name="scores_international_outlook" type="checkbox" checked>
+                    <span class="slider round"></span>
+                  </label>
+                </div>
+              </li>
+            </ul>
+            <div class="chooseSortAttribute">
+              <select  class="selectMenu">
+                <option value="scores_overall">overall</option>
+                <option value="scores_teaching" id="scores_teaching_select">teaching</option>
+                <option value="scores_research" id="scores_research_select">research</option>
+                <option value="scores_citations" id="scores_citations_select">citations</option>
+                <option value="scores_industry_income" id="scores_industry_income_select">industry income</option>
+                <option value="scores_international_outlook" id="scores_international_outlook_select">international outlook</option>
+              </select>
+              <label class="container" style="color: #000000;">
+                <input type="checkbox" id="descending" class="sortRule" style="margin-right: 10px; width: 25px; height: 25px; accent-color: #03f20f;" checked>
+                Descending 
+              </label>
+              <label class="container" style="color: #000000;">
+                <input type="checkbox" id="ascending" class="sortRule" style="margin-right: 10px; width: 25px; height: 25px; accent-color: #03f20f;">
+                Ascending
+              </label>
+            </div>
+        </div>
+
+        <div style="display: flex; width: 1200px;  margin: auto; margin-top: 20px;">
+          <div style="display: flex; width: 20%; justify-content: left; text-align: center; align-items: center; font-size: 24px; "><div class="ball" style="background-color: #e41a1c;"></div>teaching</div>
+          <div style="display: flex; width: 20%; justify-content: left; text-align: center; align-items: center; font-size: 24px; "><div class="ball" style="background-color: #377eb8;"></div>research</div>
+          <div style="display: flex; width: 20%; justify-content: left; text-align: center; align-items: center; font-size: 24px; "><div class="ball" style="background-color: #4daf4a;"></div>citations</div>
+          <div style="display: flex; width: 20%; justify-content: left; text-align: center; align-items: center; font-size: 24px; "><div class="ball" style="background-color: #ffc800;"></div>industry income</div>
+          <div style="display: flex; width: 20%; justify-content: left; text-align: center; align-items: center; font-size: 24px; "><div class="ball" style="background-color: #f200ff;"></div>international outlook</div>
+        </div>
+
+        <div id="plot">
+
+        </div>
+        
+        <script src="312551054.js"></script> 
+    </body>
+</html>
