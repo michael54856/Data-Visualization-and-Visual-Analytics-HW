@@ -1,0 +1,86 @@
+.title
+{
+  text-align: center;
+}
+
+
+#plot
+{
+  margin: auto;
+  margin-top: 30px;
+  border: 1px solid #ccc;
+  display: flex;  
+  justify-content: center; 
+  width: 660px; 
+  height: 500px; 
+  background-color: rgba(253, 181, 181, 0.1);
+  margin-right: 10%;
+}
+
+.x-axis
+{
+  font-size: 14px;
+}
+
+#mainGraph
+{
+  height: 560px;
+  display: flex;
+}
+
+.sortable-list {
+  width: 250px;
+  height: 340px;
+  background: #ffafaf;
+  border-radius: 7px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  margin-left: 10%;
+  margin-top: 100px;
+}
+.sortable-list .item {
+  list-style: none;
+  display: flex;
+  cursor: move;
+  background: #fff;
+  align-items: center;
+  width: 200px;
+  border-radius: 5px;
+  padding: 7px 5px;
+  margin-top: 11px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.25); 
+  border: 1px solid #ccc;
+  justify-content: space-between;
+  
+}
+.sortable-list .item .details {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.sortable-list .item .details span {
+  width: 100%;
+  text-align: center;
+  font-size: 1.13rem;
+}
+.sortable-list .item.dragging {
+  opacity: 0.6;
+}
+.sortable-list .item.dragging :where(.details, i) {
+  opacity: 0;
+}
+.ball 
+{
+    width: 20px; 
+    height: 20px; 
+    border-radius: 50%; 
+    margin-right: 10px;
+}
+#Order
+{
+  width: 300px;
+  position: absolute;
+  left:10%;
+  font-size: 26px;
+  top: 190px;
+  text-align: center;
+}

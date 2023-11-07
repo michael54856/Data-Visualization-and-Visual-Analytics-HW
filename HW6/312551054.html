@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'> 
+        <link rel="stylesheet" href="312551054.css">
+        <script src="https://d3js.org/d3.v6.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <h1 class="title">HW6 - ThemeRiver</h1>
+        <div style="display: flex; width: 1300px;  margin: auto; margin-top: 30px;">
+            <div style="display: flex; width: 14.28%; justify-content: left; text-align: center; align-items: center; font-size: 14px; "><div class="ball" style="background-color: #e377c2;"></div>unit with 3 bedrooms</div>
+            <div style="display: flex; width: 14.28%; justify-content: left; text-align: center; align-items: center; font-size: 14px; "><div class="ball" style="background-color: #8c564b;"></div>unit with 2 bedrooms</div>
+            <div style="display: flex; width: 14.28%; justify-content: left; text-align: center; align-items: center; font-size: 14px; "><div class="ball" style="background-color: #f5eb2c;"></div>unit with 1 bedroom</div>
+            <div style="display: flex; width: 14.28%; justify-content: left; text-align: center; align-items: center; font-size: 14px; "><div class="ball" style="background-color: #d62728;"></div>house with 5 bedrooms</div>
+            <div style="display: flex; width: 14.28%; justify-content: left; text-align: center; align-items: center; font-size: 14px; "><div class="ball" style="background-color: #2ca02c;"></div>house with 4 bedrooms</div>
+            <div style="display: flex; width: 14.28%; justify-content: left; text-align: center; align-items: center; font-size: 14px; "><div class="ball" style="background-color: #ff7f0e;"></div>house with 3 bedrooms</div>
+            <div style="display: flex; width: 14.28%; justify-content: left; text-align: center; align-items: center; font-size: 14px; "><div class="ball" style="background-color: #1f77b4;"></div>house with 2 bedrooms</div>
+        </div>
+        <div id="mainGraph" style="margin-top: 30px;">
+            <div id="Order">Order</div>
+            <ul class="sortable-list">
+                <li class="item" draggable="true" id="unit with 3 bedrooms" name="chosenLabel">
+                  <div class="details">
+                    <span style="color: #e377c2">unit with 3 bedrooms</span>
+                  </div>
+                </li>
+                <li class="item" draggable="true" id="unit with 2 bedrooms" name="chosenLabel">
+                  <div class="details">
+                    <span style="color: #8c564b">unit with 2 bedrooms</span>
+                  </div>
+                </li>
+                <li class="item" draggable="true" id="unit with 1 bedroom" name="chosenLabel">
+                  <div class="details">
+                    <span style="color: #f5eb2c">unit with 1 bedroom</span>
+                  </div>
+                </li>
+                <li class="item" draggable="true" id="house with 5 bedrooms" name="chosenLabel">
+                  <div class="details">
+                    <span style="color: #d62728">house with 5 bedrooms</span>
+                  </div>
+                </li>
+                <li class="item" draggable="true" id="house with 4 bedrooms" name="chosenLabel">
+                  <div class="details">
+                    <span style="color: #2ca02c">house with 4 bedrooms</span>
+                  </div>
+                </li>
+                <li class="item" draggable="true" id="house with 3 bedrooms" name="chosenLabel">
+                    <div class="details">
+                      <span style="color: #ff7f0e">house with 3 bedrooms</span>
+                    </div>
+                  </li>
+                <li class="item" draggable="true" id="house with 2 bedrooms" name="chosenLabel">
+                <div class="details">
+                    <span style="color: #1f77b4">house with 2 bedrooms</span>
+                </div>
+                </li>
+              </ul>
+              <div id="plot">
+
+              </div>
+        </div>
+
+        
+        
+        <script src="312551054.js"></script> 
+    </body>
+</html>
