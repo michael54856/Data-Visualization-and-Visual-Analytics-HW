@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'> 
+        <link rel="stylesheet" href="312551054.css">
+        <script src="https://d3js.org/d3.v6.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <h1 class="title">HW7 - Horizon Chart</h1>
+        <h2 id ="downloadProgress" style="margin-top: 30px; text-align: center;"></h2>
+        <h2 style="margin-top: 30px; text-align: center;">Drag to move, Mouse wheel UP/DOWN to zoom</h2>
+        <div id="labelInfo">
+            <label class="container" style="color: #000000;">
+              <input type="checkbox" name="2017" class="tagCheckBox" style="margin-right: 10px; width: 25px; height: 25px;" checked>
+              2017
+            </label>
+            <label class="container" style="color: #000000;">
+              <input type="checkbox" name="2018" class="tagCheckBox" style="margin-right: 10px; width: 25px; height: 25px;" >
+              2018
+            </label>
+            <label class="container" style="color: #000000;">
+              <input type="checkbox" name="2019" class="tagCheckBox" style="margin-right: 10px; width: 25px; height: 25px;" >
+              2019
+            </label>
+        </div>
+        <div style="display: flex; width: 1300px;  margin: auto; margin-top: 30px; margin-bottom: 30px; ">
+          <div style="display: flex; width: 16.66%; justify-content: center; text-align: center; align-items: center; font-size: 20px; "><div class="ball" style="background-color: #ff0000;"></div>SO2</div>
+          <div style="display: flex; width: 16.66%; justify-content: center; text-align: center; align-items: center; font-size: 20px; "><div class="ball" style="background-color: #f200ff;"></div>NO2</div>
+          <div style="display: flex; width: 16.66%; justify-content: center; text-align: center; align-items: center; font-size: 20px; "><div class="ball" style="background-color: #0099ff;"></div>O3</div>
+          <div style="display: flex; width: 16.66%; justify-content: center; text-align: center; align-items: center; font-size: 20px; "><div class="ball" style="background-color: #00ff22;"></div>CO</div>
+          <div style="display: flex; width: 16.66%; justify-content: center; text-align: center; align-items: center; font-size: 20px; "><div class="ball" style="background-color: #f6ff00;"></div>PM10</div>
+          <div style="display: flex; width: 16.66%; justify-content: center; text-align: center; align-items: center; font-size: 20px; "><div class="ball" style="background-color: #ff9d00;"></div>PM2.5</div>
+      </div>
+        <div class="typeHeader" style="color: #ff0000;">SO2</div>
+        <div class="plot" id="plot1">
+
+        </div>
+
+        <div class="typeHeader" style="color: #f200ff;">NO2</div>
+        <div class="plot" id="plot2">
+
+        </div>
+
+        <div class="typeHeader" style="color: #0099ff;">O3</div>
+        <div class="plot" id="plot3">
+
+        </div>
+
+        <div class="typeHeader" style="color: #00ff22;">CO</div>
+        <div class="plot" id="plot4">
+
+        </div>
+
+        <div class="typeHeader" style="color: #f6ff00;">PM10</div>
+        <div class="plot" id="plot5">
+
+        </div>
+
+        <div class="typeHeader" style="color: #ff9d00;">PM2.5</div>
+        <div class="plot" id="plot6">
+
+        </div>
+        
+        <script src="312551054.js"></script> 
+    </body>
+</html>
