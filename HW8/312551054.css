@@ -1,0 +1,43 @@
+.title
+{
+  text-align: center;
+}
+
+
+#plot
+{
+  margin: auto;
+  margin-top: 30px;
+  border: 1px solid #ccc;
+  display: flex;  
+  justify-content: center; 
+  width: 1200px; 
+  height: 700px; 
+  background-color: rgba(253, 181, 181, 0.1);
+}
+
+.link {
+  fill: none;
+  stroke: #000;
+  stroke-opacity: .15;
+}
+.link:hover {
+  stroke-opacity: .5;
+}
+
+.tooltip 
+{
+  position: absolute;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 5px;
+  border-radius: 5px;
+  pointer-events: none;
+  display: flex;
+  flex-direction: column;  /* 將子元素垂直排列 */
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.tooltip span {
+  margin: 5px;  
+}
